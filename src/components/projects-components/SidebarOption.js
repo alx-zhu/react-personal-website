@@ -37,10 +37,10 @@ const OptionContainer = styled.div`
   display: ${(props) => (props.hidden ? "none" : "flex")};
   background-color: var(--surface-color);
   height: ${(props) => (props.selected ? "120px" : "100px")};
-  width: ${(props) => (props.selected ? "95%" : "90%")};
+  width: ${(props) => (props.selected ? "92%" : "90%")};
   padding: 10px;
-  margin-bottom: ${(props) => (props.selected ? "15px" : "5px")};
-  margin-top: ${(props) => (props.selected ? "15px" : "0px")};
+  margin-bottom: ${(props) => (props.selected ? "10px" : "5px")};
+  margin-top: ${(props) => (props.selected ? "5px" : "0px")};
   box-shadow: var(--box-shadow);
   align-items: center;
   border-right: ${(props) =>

@@ -59,6 +59,7 @@ const HeadingContainer = styled.div`
   align-items: center;
   margin-top: 80px;
   position: relative;
+  animation: fadeIn 500ms ease-in;
   /* ::before {
     position: absolute;
     content: "";

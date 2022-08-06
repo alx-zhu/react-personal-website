@@ -49,6 +49,8 @@ const SidebarContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
+  padding-bottom: 80px;
+  animation: fadeIn 500ms ease-in-out;
 `;
 
 const SidebarTitle = styled.h1`

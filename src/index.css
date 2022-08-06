@@ -3,6 +3,7 @@
 :root {
   --bg-color: #121212;
   --surface-color: rgb(255, 255, 255, 0.05);
+  --surface-color-hover: rgb(255, 255, 255, 0.1);
   --surface-color-solid: rgb(25, 25, 25);
   --p-color: #bb86fc;
   --p-color-trans: rgba(187, 134, 252, 0.15);
@@ -15,6 +16,7 @@
   --box-shadow-thick: black 1px 2px 5px;
   --offset1: 15px;
   --offset2: -15px;
+  --nav-height: 75px;
 }
 
 * {

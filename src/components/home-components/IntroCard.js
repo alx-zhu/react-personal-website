@@ -55,8 +55,8 @@ const IntroCard = ({ images, title, text, vertical }) => {
     );
   else
     return (
-      <IntroCardOpacityController opac={cardOpacity}>
-        <IntroCardContainer ref={cardRef}>
+      <IntroCardOpacityController opac={cardOpacity} ref={cardRef}>
+        <IntroCardContainer>
           <img src={images[0].src} alt={images[0].alt} />
           <IntroCardContent>
             <IntroCardTitle>{title}</IntroCardTitle>

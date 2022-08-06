@@ -37,7 +37,7 @@ const FooterContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   height: 200px;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 0;
   > div {
     display: flex;
     justify-content: center;

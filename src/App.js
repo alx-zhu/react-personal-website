@@ -7,23 +7,29 @@ import { useLocation } from "react-router-dom";
 
 import "./index.css";
 import Contact from "./components/contact-components/Contact";
+import { GlobalProvider } from "./components/context/GlobalState";
 
 function App() {
   const location = useLocation();
 
   return (
-    <div className="App">
-      <GlobalStyle />
-      <Routes>
-        <Route path="/" element={<Home path={location.pathname} />} />
-        <Route path="about" element={<About path={location.pathname} />} />
-        <Route
-          path="projects"
-          element={<Projects path={location.pathname} />}
-        />
-        <Route path="contact" element={<Contact path={location.pathname} />} />
-      </Routes>
-    </div>
+    <GlobalProvider>
+      <div className="App">
+        <GlobalStyle />
+        <Routes>
+          <Route path="/" element={<Home path={location.pathname} />} />
+          <Route path="about" element={<About path={location.pathname} />} />
+          <Route
+            path="projects"
+            element={<Projects path={location.pathname} />}
+          />
+          <Route
+            path="contact"
+            element={<Contact path={location.pathname} />}
+          />
+        </Routes>
+      </div>
+    </GlobalProvider>
   );
 }
 
@@ -39,5 +45,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   img {
     box-shadow: var(--box-shadow-thick);
+  }
+  .hidden {
+    display: none;
   }
 `;

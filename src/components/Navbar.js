@@ -43,7 +43,7 @@ const NavbarContainer = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  height: 75px;
+  height: var(--nav-height);
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
@@ -71,7 +71,6 @@ const Nav = styled.nav`
     li {
       margin: 0 5px;
       padding: 10px;
-      cursor: pointer;
       transition: 100ms background-color ease-in-out;
       border-radius: 6px;
       :hover {
@@ -86,4 +85,5 @@ const StyledLink = styled(Link)`
   color: ${(props) => (props.selected ? "var(--p-color)" : "inherit")};
   opacity: inherit;
   text-decoration: none;
+  cursor: pointer;
 `;

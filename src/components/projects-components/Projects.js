@@ -24,4 +24,5 @@ const ProjectsContentContainer = styled.div`
   display: flex;
   margin-top: var(--nav-height);
   min-height: 1000px;
+  background-color: var(--surface-color-dark);
 `;

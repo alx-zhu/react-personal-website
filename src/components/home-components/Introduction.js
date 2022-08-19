@@ -59,8 +59,8 @@ export default Introduction;
 
 // Introduction
 const IntroContainer = styled.div`
-  height: auto;
-  margin: 70px;
+  padding: 50px;
+  flex: 0.7;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -68,12 +68,5 @@ const IntroContainer = styled.div`
   opacity: ${(props) => props.opac};
   transition: opacity 500ms ease-in-out;
   position: relative;
-  ::after {
-    position: absolute;
-    content: "";
-    bottom: -30px;
-    background-color: var(--text-color);
-    width: 50%;
-    height: 0.5px;
-  }
+  /* background-color: var(--surface-color-dark); */
 `;

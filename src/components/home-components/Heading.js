@@ -31,35 +31,46 @@ const imagesList = [
 
 const Heading = ({ opac }) => {
   return (
-    <HeadingContainer>
-      <ImageGrid>
-        {imagesList.map((img) => (
-          <img
-            src={img.src}
-            key={img.src}
-            alt={img.alt}
-            className={img.orient}
-          />
-        ))}
-      </ImageGrid>
-      <NamePlate opac={opac}>
-        <h1>Hello, I'm Alex!</h1>
-      </NamePlate>
-    </HeadingContainer>
+    <FlexContainer>
+      <HeadingContainer>
+        <ImageGrid>
+          {imagesList.map((img) => (
+            <img
+              src={img.src}
+              key={img.src}
+              alt={img.alt}
+              className={img.orient}
+            />
+          ))}
+        </ImageGrid>
+        <NamePlate opac={opac}>
+          <h1>Hello, I'm Alex!</h1>
+        </NamePlate>
+      </HeadingContainer>
+    </FlexContainer>
   );
 };
 
 export default Heading;
 
 // Heading
+const FlexContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 const HeadingContainer = styled.div`
-  height: 550px;
+  min-height: 550px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: var(--nav-height);
   position: relative;
   animation: fadeIn 500ms ease-in;
+  padding: 20px 0 70px 0;
+  box-shadow: var(--box-shadow-thick);
   /* ::before {
     position: absolute;
     content: "";
@@ -68,14 +79,14 @@ const HeadingContainer = styled.div`
     width: 50%;
     height: 0.5px;
   } */
-  ::after {
+  /* ::after {
     position: absolute;
     content: "";
     bottom: -40px;
     background-color: var(--text-color);
     width: 50%;
     height: 0.5px;
-  }
+  } */
 `;
 
 const ImageGrid = styled.div`
@@ -110,8 +121,8 @@ const ImageGrid = styled.div`
 
 const NamePlate = styled.div`
   position: absolute;
-  top: 35%;
-  bottom: 35%;
+  top: 30%;
+  bottom: 40%;
   width: 75vw;
   background-color: rgba(0, 0, 0, 0.55);
   display: flex;

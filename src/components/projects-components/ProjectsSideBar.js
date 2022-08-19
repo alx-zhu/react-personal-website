@@ -51,6 +51,7 @@ const SidebarContainer = styled.div`
   padding: 10px 0;
   padding-bottom: 80px;
   animation: fadeIn 500ms ease-in-out;
+  background-color: var(--bg-color);
 `;
 
 const SidebarTitle = styled.h1`

@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
 
 const Project = () => {
-  const { selectedId, projects } = useContext(GlobalContext);
-  const selected = projects.find((p) => p.id === selectedId);
+  const { selectedProjectId, projects } = useContext(GlobalContext);
+  const selected = projects.find((p) => p.id === selectedProjectId);
   if (selected) {
     const { img, title, date, languages, description, github } = selected;
     return (

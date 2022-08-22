@@ -3,31 +3,12 @@ const appReducer = (state, action) => {
     case "SELECT_PROJECT":
       return {
         ...state,
-        selectedId: action.payload,
-        // projects: state.projects.map((project) => {
-        //   if (project.id === action.payload) {
-        //     return {
-        //       ...project,
-        //       selected: true,
-        //     };
-        //   } else {
-        //     return {
-        //       ...project,
-        //       selected: false,
-        //     };
-        //   }
-        // }),
+        selectedProjectId: action.payload,
       };
     case "DESELECT_PROJECTS":
       return {
         ...state,
-        selectedId: 0,
-        // projects: state.projects.map((project) => {
-        //   return {
-        //     ...project,
-        //     selected: false,
-        //   };
-        // }),
+        selectedProjectId: 0,
       };
     case "SORT_BY_NAME":
       return {
@@ -59,6 +40,16 @@ const appReducer = (state, action) => {
             };
           }
         }),
+      };
+    case "SELECT_HOME_OPTION":
+      return {
+        ...state,
+        selectedHomeOptionId: action.payload,
+      };
+    case "DESELECT_HOME_OPTIONS":
+      return {
+        ...state,
+        selectedHomeOptionId: 0,
       };
     default:
       return state;

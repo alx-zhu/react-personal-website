@@ -8,6 +8,8 @@
   --surface-color-dark: rgb(0, 0, 0, 0.15);
   --p-color: #bb86fc;
   --p-color-trans: rgba(187, 134, 252, 0.15);
+  --p-color-scroll: rgba(187, 134, 252, 0.3);
+  --p-color-scroll-light: rgba(187, 134, 252, 0.5);
   --p-dark-var: #3700b3;
   --p-light-var: #6200ee;
   --s-color: #03dac5;
@@ -19,9 +21,31 @@
   --offset1: 15px;
   --offset2: -15px;
   --nav-height: 75px;
+  --dark-hover: rgb(0, 0, 0, 0.2);
 }
 
 * {
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--p-color-scroll);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--p-color-scroll-light);
 }

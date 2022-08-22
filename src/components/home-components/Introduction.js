@@ -68,5 +68,8 @@ const IntroContainer = styled.div`
   opacity: ${(props) => props.opac};
   transition: opacity 500ms ease-in-out;
   position: relative;
+  /* overflow-y: scroll;
+  height: 1000px; */
+
   /* background-color: var(--surface-color-dark); */
 `;

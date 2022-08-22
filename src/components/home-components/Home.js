@@ -5,10 +5,12 @@ import Introduction from "./Introduction";
 import Navbar from "../Navbar";
 import styled from "styled-components";
 import HomeSidebar from "./HomeSidebar";
+import HomeContent from "./HomeContent";
 // import Sidebar from "./Sidebar";
 
 const Home = ({ path }) => {
-  const [navOpacity, setNavOpacity] = useState(0);
+  const [navOpacity, setNavOpacity] = useState(1);
+  const [headerOpacity, setHeaderOpacity] = useState(1);
   // const [introOpacity, setIntroOpacity] = useState(0);
 
   useEffect(() => {
@@ -17,15 +19,22 @@ const Home = ({ path }) => {
   }, []);
 
   const listenToScroll = () => {
-    const navThreshold = 100;
+    const navThreshold = 550;
+    const headerThreshold = 100;
     // const introThreshold = 100;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
 
     if (winScroll > navThreshold) {
-      setNavOpacity(1);
-    } else {
       setNavOpacity(0);
+    } else {
+      setNavOpacity(1);
+    }
+
+    if (winScroll > headerThreshold) {
+      setHeaderOpacity(0);
+    } else {
+      setHeaderOpacity(1);
     }
 
     // if (winScroll > introThreshold) {
@@ -37,11 +46,12 @@ const Home = ({ path }) => {
 
   return (
     <>
-      <Navbar opac={1} path={path} />
-      <Heading opac={1 - navOpacity} />
+      <Navbar opac={navOpacity} path={path} />
+      <Heading opac={headerOpacity} />
       <BodyContainer>
         <HomeSidebar />
-        <Introduction />
+        <HomeContent />
+        {/* <Introduction /> */}
       </BodyContainer>
       <Footer />
     </>

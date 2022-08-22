@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
 
 const SidebarOption = ({ id, img, title, date, languages, hidden }) => {
-  const { selectedId, selectProject, deselectProjects } =
+  const { selectedProjectId, selectProject, deselectProjects } =
     useContext(GlobalContext);
-  return id === selectedId ? (
+  return id === selectedProjectId ? (
     <OptionContainer
       selected
       id={id}

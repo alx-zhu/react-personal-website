@@ -6,7 +6,7 @@ const Project = () => {
   const { selectedProjectId, projects } = useContext(GlobalContext);
   const selected = projects.find((p) => p.id === selectedProjectId);
   if (selected) {
-    const { img, title, date, languages, description, github } = selected;
+    const { img, title, date, languages, text, github } = selected;
     return (
       <ProjectContainer>
         <ProjectTitle>{title}</ProjectTitle>
@@ -24,7 +24,7 @@ const Project = () => {
           <h3>
             <strong>Description:</strong>
           </h3>
-          <p>{description}</p>
+          <p>{text}</p>
         </ProjectTextContainer>
       </ProjectContainer>
     );

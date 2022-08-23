@@ -15,19 +15,37 @@ const HomeSidebar = () => {
       /> */}
       {homeOptions?.slice(0, 2).map((h) => {
         return (
-          <HomeOption key={h.id} id={h.id} title={h.title} Icon={h.Icon} />
+          <HomeOption
+            key={h.id}
+            id={h.id}
+            title={h.title}
+            Icon={h.Icon}
+            iconColor={h.iconColor}
+          />
         );
       })}
       <SidebarSubtitle>Projects</SidebarSubtitle>
       {homeOptions?.slice(2, 4).map((h) => {
         return (
-          <HomeOption key={h.id} id={h.id} title={h.title} Icon={h.Icon} />
+          <HomeOption
+            key={h.id}
+            id={h.id}
+            title={h.title}
+            Icon={h.Icon}
+            iconColor={h.iconColor}
+          />
         );
       })}
       <SidebarSubtitle>Contact</SidebarSubtitle>
       {homeOptions?.slice(-1).map((h) => {
         return (
-          <HomeOption key={h.id} id={h.id} title={h.title} Icon={h.Icon} />
+          <HomeOption
+            key={h.id}
+            id={h.id}
+            title={h.title}
+            Icon={h.Icon}
+            iconColor={h.iconColor}
+          />
         );
       })}
     </HomeSidebarContainer>
@@ -51,6 +69,7 @@ const HomeSidebarContainer = styled.div`
   padding-bottom: 40px;
   border-radius: 20px;
   margin: 50px;
+  margin-right: 0;
   /* height: 1000px; */
 `;
 

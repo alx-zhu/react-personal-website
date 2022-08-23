@@ -1,21 +1,38 @@
+import { margin } from "@mui/system";
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
+import HomeCard from "./HomeCard";
 const HomeContent = () => {
   const { selectedHomeOptionId, homeOptions } = useContext(GlobalContext);
   const selected = homeOptions.find((h) => h.id === selectedHomeOptionId);
   if (selected) {
-    return <HomeContentContainer></HomeContentContainer>;
+    const { title, content } = selected;
+    return (
+      <HomeContentContainer>
+        <HomeTitle>{title}</HomeTitle>
+        {selected.img && (
+          <Thumbnail src={selected.img.src} alt={selected.img.alt} />
+        )}
+        {content.map((card) => (
+          <HomeCard
+            key={card.id}
+            id={card.id}
+            title={card.title}
+            text={card.text}
+            other={card}
+          />
+        ))}
+      </HomeContentContainer>
+    );
   }
-
-  return <HomeContentContainer></HomeContentContainer>;
 };
 
 export default HomeContent;
 
 // Introduction
 const HomeContentContainer = styled.div`
-  padding: 50px;
+  padding: 50px 0;
   /* flex: 0.7; */
   width: 80%;
   display: flex;
@@ -26,4 +43,17 @@ const HomeContentContainer = styled.div`
   transition: opacity 500ms ease-in-out;
   position: relative;
   /* background-color: var(--surface-color-dark); */
+`;
+
+const HomeTitle = styled.h1`
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 50px;
+`;
+
+const Thumbnail = styled.img`
+  width: 50%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
 `;

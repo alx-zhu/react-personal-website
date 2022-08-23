@@ -10,8 +10,8 @@ export const projectsList = [
     date: "08/05/2022",
     languages: "JavaScript, React, Styled Components",
     github: "https://github.com/alx-zhu/react-personal-website",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
   {
     id: 6,
@@ -24,8 +24,8 @@ export const projectsList = [
     date: "06/14/2022",
     languages: "JavaScript, CSS, React",
     github: "https://github.com/alx-zhu/todo-list",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
   {
     id: 5,
@@ -37,8 +37,8 @@ export const projectsList = [
     date: "05/24/2022",
     languages: "HTML, JavaScript, CSS, React",
     github: "https://github.com/alx-zhu/todo-list",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
   {
     id: 4,
@@ -50,8 +50,8 @@ export const projectsList = [
     date: "05/09/2022",
     languages: "HTML, CSS",
     github: "https://github.com/alx-zhu/html-personal-website",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
   {
     id: 3,
@@ -63,8 +63,8 @@ export const projectsList = [
     date: "05/06/2022",
     languages: "Python, CMU Graphics",
     github: "https://github.com/alx-zhu/CaveGenerator",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
   {
     id: 2,
@@ -77,8 +77,8 @@ export const projectsList = [
     date: "12/02/2021",
     languages: "Python, CMU Graphics",
     github: "https://github.com/alx-zhu/AndysLabyrinth",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
   {
     id: 1,
@@ -91,7 +91,7 @@ export const projectsList = [
     date: "06/22/2021",
     languages: "Unity Game Engine, C#",
     github: "https://github.com/alx-zhu/ThePacificGarbagePatch",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus mauris a diam maecenas sed enim. Vitae sapien pellentesque habitant morbi tristique senectus. Ultrices gravida dictum fusce ut placerat orci. Neque gravida in fermentum et sollicitudin ac orci. Proin libero nunc consequat interdum varius. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Dignissim diam quis enim lobortis scelerisque fermentum. At augue eget arcu dictum varius duis at. Ut placerat orci nulla pellentesque dignissim enim. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Amet risus nullam eget felis eget nunc lobortis mattis.",
+    clickable: true,
   },
 ];

@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
+import PushPinIcon from "@mui/icons-material/PushPin";
 
-const SidebarOption = ({ id, img, title, date, languages, hidden }) => {
+const SidebarOption = ({ id, img, title, date, languages, hidden, pinned }) => {
   const { selectedProjectId, selectProject, deselectProjects } =
     useContext(GlobalContext);
   return id === selectedProjectId ? (
@@ -14,7 +15,9 @@ const SidebarOption = ({ id, img, title, date, languages, hidden }) => {
     >
       <Thumbnail src={img.src} alt={img.alt} />
       <TextContainer selected>
-        <h3>{title}</h3>
+        <h3>
+          {pinned && <PushPinIcon />} {title}
+        </h3>
         <h4>{date}</h4>
         <h4>{languages}</h4>
       </TextContainer>
@@ -23,7 +26,9 @@ const SidebarOption = ({ id, img, title, date, languages, hidden }) => {
     <OptionContainer id={id} onClick={() => selectProject(id)} hidden={hidden}>
       <Thumbnail src={img.src} alt={img.alt} />
       <TextContainer>
-        <h3>{title}</h3>
+        <h3>
+          {pinned && <PushPinIcon />} {title}
+        </h3>
         <h4>{date}</h4>
         <h4>{languages}</h4>
       </TextContainer>
@@ -61,6 +66,10 @@ const TextContainer = styled.div`
     font-size: ${(props) => (props.selected ? "24px" : "20px")};
     margin: 0;
     margin-bottom: 10px;
+    > .MuiSvgIcon-root {
+      margin-right: 2px;
+      font-size: 14px;
+    }
   }
   h4 {
     font-weight: 300;

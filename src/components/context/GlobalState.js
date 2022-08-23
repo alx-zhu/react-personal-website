@@ -5,7 +5,7 @@ import { homeOptions } from "./homeOptions";
 
 // Initial State
 const initialState = {
-  selectedHomeOptionId: 0,
+  selectedHomeOptionId: "about-me",
   homeOptions: homeOptions,
   selectedProjectId: 0,
   projects: projectsList,

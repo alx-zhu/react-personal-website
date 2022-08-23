@@ -31,6 +31,7 @@ const ProjectsSideBar = () => {
             date={p.date}
             languages={p.languages}
             hidden={p.hidden}
+            pinned={p.pinned}
           />
         );
       })}

@@ -1,4 +1,3 @@
-import { margin } from "@mui/system";
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
@@ -11,9 +10,9 @@ const HomeContent = () => {
     return (
       <HomeContentContainer>
         <HomeTitle>{title}</HomeTitle>
-        {selected.img && (
+        {/* {selected.img && (
           <Thumbnail src={selected.img.src} alt={selected.img.alt} />
-        )}
+        )} */}
         {content.map((card) => (
           <HomeCard
             key={card.id}
@@ -56,4 +55,5 @@ const Thumbnail = styled.img`
   height: auto;
   max-height: 300px;
   object-fit: cover;
+  margin-bottom: 50px;
 `;

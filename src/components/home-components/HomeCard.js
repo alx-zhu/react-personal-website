@@ -4,16 +4,33 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
+import PushPinIcon from "@mui/icons-material/PushPin";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const HomeCard = ({ id, title, text, other }) => {
   const { selectProject, selectedHomeOptionId } = useContext(GlobalContext);
   const project = selectedHomeOptionId.includes("project");
   const resume = selectedHomeOptionId === "resume";
+  const contact = selectedHomeOptionId === "contact";
   return (
     <HomeCardContainer>
-      <h1>{title}</h1>
+      <TitleContainer>
+        {project && other.pinned && <PushPinIcon />}
+        <h1>{title}</h1>
+      </TitleContainer>
+
       {resume && <iframe src={other.link} title="Resume"></iframe>}
       {other.img && <img src={other.img.src} alt={other.img.alt} />}
+      {other.images && (
+        <ImageGroup len={other.images.length}>
+          {other.images.map((img) => (
+            <img src={img.src} alt={img.alt} />
+          ))}
+        </ImageGroup>
+      )}
       {other.date && (
         <h3>
           <strong>Date:</strong> {other.date}
@@ -50,6 +67,29 @@ const HomeCard = ({ id, title, text, other }) => {
         </>
       )}
       {!project && <p>{text}</p>}
+
+      {contact && (
+        <ContactTextContainer>
+          <h3>
+            <LocalPhoneIcon />
+            <strong>Telephone:</strong> {other.phone}
+          </h3>
+          <h3>
+            <EmailIcon />
+            <strong>Email:</strong>{" "}
+            <a href={"mailto:" + other.email}>{other.email}</a>
+          </h3>
+          <h3>
+            <LinkedInIcon />
+            <strong>LinkedIn:</strong>{" "}
+            <a href={other.linkedin}>{other.linkedin}</a>
+          </h3>
+          <h3>
+            <GitHubIcon />
+            <strong>Github:</strong> <a href={other.github}>{other.github}</a>
+          </h3>
+        </ContactTextContainer>
+      )}
     </HomeCardContainer>
   );
 };
@@ -118,4 +158,37 @@ const ProjectsLink = styled(Link)`
   color: var(--p-color);
   font-weight: 200;
   font-size: 16px;
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  > .MuiSvgIcon-root {
+    margin-right: 10px;
+  }
+`;
+
+const ImageGroup = styled.div`
+  display: flex;
+  width: ${(props) => (props.len > 1 ? "80%" : "60%")};
+  max-height: 300px;
+  img {
+    flex: 1;
+  }
+  margin: 20px 0;
+`;
+
+const ContactTextContainer = styled.div`
+  margin-top: 30px;
+  h3 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  strong {
+    margin-right: 10px;
+  }
+  .MuiSvgIcon-root {
+    margin-right: 10px;
+  }
 `;

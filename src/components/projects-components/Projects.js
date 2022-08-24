@@ -3,14 +3,14 @@ import styled from "styled-components";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import Project from "./Project";
-import ProjectsSidebar from "./ProjectsSidebar";
+import ProjectSidebar from "./ProjectSidebar";
 
 const Projects = ({ path }) => {
   return (
     <>
       <Navbar path={path} />
       <ProjectsContentContainer>
-        <ProjectsSidebar />
+        <ProjectSidebar />
         <Project />
       </ProjectsContentContainer>
       <Footer />

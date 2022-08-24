@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 import SidebarOption from "./SidebarOption";
 import SearchIcon from "@mui/icons-material/Search";
 
-const ProjectsSideBar = () => {
+const ProjectsSidebar = () => {
   const { projects, searchProjects } = useContext(GlobalContext);
   return (
     <SidebarContainer>
@@ -39,7 +39,7 @@ const ProjectsSideBar = () => {
   );
 };
 
-export default ProjectsSideBar;
+export default ProjectsSidebar;
 
 const SidebarContainer = styled.div`
   flex: 0.35;

@@ -50,10 +50,10 @@ const HomeTitle = styled.h1`
   margin-bottom: 50px;
 `;
 
-const Thumbnail = styled.img`
-  width: 50%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  margin-bottom: 50px;
-`;
+// const Thumbnail = styled.img`
+//   width: 50%;
+//   height: auto;
+//   max-height: 300px;
+//   object-fit: cover;
+//   margin-bottom: 50px;
+// `;

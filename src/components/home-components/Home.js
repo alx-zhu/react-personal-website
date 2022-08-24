@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Footer from "../Footer";
 import Heading from "./Heading";
-import Introduction from "./Introduction";
+// import Introduction from "./Introduction";
 import Navbar from "../Navbar";
 import styled from "styled-components";
 import HomeSidebar from "./HomeSidebar";

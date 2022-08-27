@@ -19,7 +19,10 @@ const Project = () => {
             <strong>Languages/Tools Used:</strong> {languages}
           </h3>
           <h3>
-            <strong>Github:</strong> <a href={github}>{github}</a>
+            <strong>Github:</strong>{" "}
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              {github}
+            </a>
           </h3>
           <h3>
             <strong>Description:</strong>

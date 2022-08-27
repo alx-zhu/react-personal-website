@@ -27,7 +27,7 @@ const HomeCard = ({ id, title, text, other }) => {
       {other.images && (
         <ImageGroup len={other.images.length}>
           {other.images.map((img) => (
-            <img src={img.src} alt={img.alt} />
+            <img key={img.alt} src={img.src} alt={img.alt} />
           ))}
         </ImageGroup>
       )}
@@ -43,7 +43,10 @@ const HomeCard = ({ id, title, text, other }) => {
       )}
       {project && (
         <h3>
-          <strong>Github:</strong> <a href={other.github}>{other.github}</a>
+          <strong>Github:</strong>{" "}
+          <a href={other.github} target="_blank" rel="noopener noreferrer">
+            {other.github}
+          </a>
         </h3>
       )}
 

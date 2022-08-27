@@ -66,7 +66,7 @@ const HeadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--nav-height);
+  /* margin-top: var(--nav-height); */
   position: relative;
   animation: fadeIn 500ms ease-in;
   padding: 20px 0 70px 0;

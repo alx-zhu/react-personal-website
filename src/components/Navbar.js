@@ -40,7 +40,7 @@ export default Navbar;
 
 // Navbar
 const NavbarContainer = styled.div`
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   height: var(--nav-height);

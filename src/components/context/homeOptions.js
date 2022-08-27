@@ -13,7 +13,7 @@ const AboutMeCards = [
       { src: "images/cmu-cs-academy.png", alt: "SCS Logo" },
     ],
     title: "My Current Affiliations",
-    text: "I love to play soccer, and spent several years playing with my closest friends in high school. Music is also especially important in my life, as I have played piano and violin since elementary school.",
+    text: "Currently, I am working as a part of the CMU CS Academy Outreach team, and am also a Software Developer Intern on the Business Intelligence team at Studyfind. At CS Academy, I help answer helpdesk and teacher account request tickets, create projects for teacher materials and new exercises for students, and co-teach professional development sessions for teachers using CS Academy. At Studyfind, I work as a part of the Business Intelligence team, in which we work to automate workflows for other Studyfind teams; more specifically, I am currently working on sending automated emails to researchers to improve the marketing team's workflow, and have been working on a file-processor to handle the webscraping and emailing.",
     vertical: true,
   },
   {
@@ -25,7 +25,7 @@ const AboutMeCards = [
       },
     ],
     title: "My Education",
-    text: "I am currently a part of the Information Systems at Carnegie Mellon University, with the goal of applying my computer science education to solving real-world issues that I am passionate about, such as increasing the availability of computer science education in primary and secondary schools. To fulfill these goals, I am currently working as a part of the CMU Computer Science Academy Outreach Team",
+    text: "At Carnegie Mellon, I currently a part of the Information Systems program, and am seeking to complete an additional minor in Computer Science as well. Ultimately, I hope to use my technical education at CMU to address real world issues such as water pollution and accessibility of computer science education. Though short, my journey has been far from straightforward; as a first-year, I struggled to find passion for my studies as a chemistry major and frequently considered transferring out of CMU. Over my first two semesters, I vacillated between possibilities of transferring to countless different universities, and 5 different majors. However, much to my surprise, I discovered an interest in computer science and found a place as a part of the IS program at Carnegie Mellon. This year, I look forward to beginning a new chapter at CMU, taking classes I am passionate about, and working towards a career that excites me.",
   },
   {
     id: 3,
@@ -34,9 +34,13 @@ const AboutMeCards = [
         src: "images/soccer-team.jpg",
         alt: "Alex's Soccer Team",
       },
+      {
+        src: "images/all-state-picture.png",
+        alt: "NYSSMA Conference All State 2019",
+      },
     ],
     title: "My Hobbies",
-    text: "I love to play soccer, and spent several years playing with my closest friends in high school. Music is also especially important in my life, as I have played piano and violin since elementary school.",
+    text: "Outside of my education, I have always enjoyed playing sports and classical music. For most of my life, I have had the privilege of playing soccer with some of my best friends. Throughout high school, I played soccer as a part of the varsity team for four years -- an experience I will always miss in the coming years. At CMU, I try to play pick-up and intramural soccer as often as possible, and have even found a new interest in volleyball and ultimate frisbee. Especially in high school, music was a way for me to connect with others in orchestra, and to escape from the stress in the other parts of my life. One of the most important experiences in my life so far, was being a part of the NYSSMA Conference All State Orchestra, which brought about my love for orchestra and gave me some of my most cherished memories and friendships. Some of my favorite classical pieces are Rachmaninoff's Piano Concerto No. 2, Tchaikovsky's Serenade for Strings, and Dvorak's Symphony No. 9.",
   },
 ];
 

@@ -9,6 +9,12 @@ const Navbar = ({ opac, path }) => {
     { rawPath: "/projects", pathName: "Projects" },
     { rawPath: "/contact", pathName: "Contact" },
   ];
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <NavbarContainer opac={opac}>
       <NameLogo>Alexander Zhu</NameLogo>
@@ -18,7 +24,11 @@ const Navbar = ({ opac, path }) => {
             if (p.rawPath === path)
               return (
                 <li key={p.pathName}>
-                  <StyledLink to={p.rawPath} selected>
+                  <StyledLink
+                    to={p.rawPath}
+                    onClick={() => scrollToTop()}
+                    selected
+                  >
                     {p.pathName}
                   </StyledLink>
                 </li>
@@ -26,7 +36,9 @@ const Navbar = ({ opac, path }) => {
             else
               return (
                 <li key={p.pathName}>
-                  <StyledLink to={p.rawPath}>{p.pathName}</StyledLink>
+                  <StyledLink to={p.rawPath} onClick={() => scrollToTop()}>
+                    {p.pathName}
+                  </StyledLink>
                 </li>
               );
           })}

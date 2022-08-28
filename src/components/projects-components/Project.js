@@ -5,6 +5,8 @@ import { GlobalContext } from "../context/GlobalState";
 const Project = () => {
   const { selectedProjectId, projects } = useContext(GlobalContext);
   const selected = projects.find((p) => p.id === selectedProjectId);
+  // const scrollRef = useRef(null);
+
   if (selected) {
     const { img, title, date, languages, text, github } = selected;
     return (

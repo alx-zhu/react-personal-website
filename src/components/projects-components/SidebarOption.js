@@ -6,11 +6,19 @@ import PushPinIcon from "@mui/icons-material/PushPin";
 const SidebarOption = ({ id, img, title, date, languages, hidden, pinned }) => {
   const { selectedProjectId, selectProject, deselectProjects } =
     useContext(GlobalContext);
+  const scrollToTop = () =>
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   return id === selectedProjectId ? (
     <OptionContainer
       selected
       id={id}
-      onClick={() => deselectProjects()}
+      onClick={() => {
+        deselectProjects();
+        scrollToTop();
+      }}
       hidden={hidden}
     >
       <Thumbnail src={img.src} alt={img.alt} />
@@ -23,7 +31,14 @@ const SidebarOption = ({ id, img, title, date, languages, hidden, pinned }) => {
       </TextContainer>
     </OptionContainer>
   ) : (
-    <OptionContainer id={id} onClick={() => selectProject(id)} hidden={hidden}>
+    <OptionContainer
+      id={id}
+      onClick={() => {
+        selectProject(id);
+        scrollToTop();
+      }}
+      hidden={hidden}
+    >
       <Thumbnail src={img.src} alt={img.alt} />
       <TextContainer>
         <h3>

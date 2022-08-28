@@ -1,14 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalState";
 import HomeCard from "./HomeCard";
+
 const HomeContent = () => {
   const { selectedHomeOptionId, homeOptions } = useContext(GlobalContext);
   const selected = homeOptions.find((h) => h.id === selectedHomeOptionId);
+  const contentRef = useRef(null);
+  contentRef?.current?.scrollIntoView({
+    behavior: "smooth",
+  });
+
   if (selected) {
     const { title, content } = selected;
     return (
-      <HomeContentContainer>
+      <HomeContentContainer ref={contentRef}>
         <HomeTitle>{title}</HomeTitle>
         {/* {selected.img && (
           <Thumbnail src={selected.img.src} alt={selected.img.alt} />

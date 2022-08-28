@@ -29,7 +29,9 @@ const Project = () => {
           <h3>
             <strong>Description:</strong>
           </h3>
-          <p>{text}</p>
+          {text.map((p, index) => (
+            <p key={index}>{p}</p>
+          ))}
         </ProjectTextContainer>
       </ProjectContainer>
     );
@@ -75,6 +77,7 @@ const ProjectTextContainer = styled.div`
   p {
     font-weight: 300;
     margin: 5px;
+    margin-bottom: 10px;
     font-size: 18px;
     line-height: 25px;
   }

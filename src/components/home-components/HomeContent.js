@@ -6,15 +6,15 @@ import HomeCard from "./HomeCard";
 const HomeContent = () => {
   const { selectedHomeOptionId, homeOptions } = useContext(GlobalContext);
   const selected = homeOptions.find((h) => h.id === selectedHomeOptionId);
-  const contentRef = useRef(null);
-  contentRef?.current?.scrollIntoView({
+  const scrollRef = useRef(null);
+  scrollRef?.current?.scrollIntoView({
     behavior: "smooth",
   });
 
   if (selected) {
     const { title, content } = selected;
     return (
-      <HomeContentContainer ref={contentRef}>
+      <HomeContentContainer ref={scrollRef}>
         <HomeTitle>{title}</HomeTitle>
         {/* {selected.img && (
           <Thumbnail src={selected.img.src} alt={selected.img.alt} />

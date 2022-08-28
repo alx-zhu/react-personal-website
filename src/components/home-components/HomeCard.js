@@ -57,19 +57,30 @@ const HomeCard = ({ id, title, text, other }) => {
       )}
       {project && (
         <>
-          <p>{text.slice(0, 250)} . . .</p>
+          <p>{text[0].slice(0, 250)} . . .</p>
           <br />
           <p>
             <ProjectsLink
               to="/projects"
-              onClick={() => selectProject(other.id)}
+              onClick={() => {
+                selectProject(other.id);
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
             >
               Click here continue reading on the Projects page.
             </ProjectsLink>
           </p>
         </>
       )}
-      {!project && <p>{text}</p>}
+      {!project &&
+        text.map((p, index) => (
+          <p key={index} className={!contact ? "m-bot indent" : ""}>
+            {p}
+          </p>
+        ))}
 
       {contact && (
         <ContactTextContainer>
@@ -152,6 +163,12 @@ const HomeCardContainer = styled.div`
   iframe {
     width: 55vw;
     height: 70vw;
+  }
+  .m-bot {
+    margin-bottom: 20px;
+  }
+  .indent {
+    text-indent: 3em;
   }
 `;
 

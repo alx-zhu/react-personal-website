@@ -29,7 +29,7 @@ const AboutMeCards = [
     ],
     title: "My Education",
     text: [
-      "At Carnegie Mellon, I currently a part of the Information Systems program, and am seeking to complete an additional minor in Computer Science as well. Ultimately, I hope to use my technical education at CMU to address real world issues such as water pollution and accessibility of computer science education.",
+      "At Carnegie Mellon, I currently a part of the Information Systems program, and am seeking to complete an additional minor in Computer Science as well. Ultimately, I hope to use my technical education at CMU to address the accessibility of computer science education, and work to improve language learning programs.",
       "Though short, my journey has been far from straightforward; as a first-year, I struggled to find passion for my studies as a chemistry major and frequently considered transferring out of CMU. Over my first two semesters, I vacillated between possibilities of transferring to countless different universities, and 5 different majors. However, much to my surprise, I discovered an interest in computer science and found a place as a part of the IS program at Carnegie Mellon. This year, I look forward to beginning a new chapter at CMU, taking classes I am passionate about, and working towards a career that excites me.",
     ],
   },

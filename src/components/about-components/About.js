@@ -8,6 +8,8 @@ const About = ({ path }) => {
     <>
       <Navbar path={path} />
       <UnderConstruction />
+      {/* ADD A MY GOALS SECTION */}
+      {/* <h1>MY CURRENT GOALS</h1> */}
       <Footer />
     </>
   );

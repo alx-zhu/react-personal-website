@@ -73,8 +73,9 @@ export const homeOptions = [
     content: [
       {
         id: 1,
-        title: "05/04/2022 Resume",
-        link: "https://drive.google.com/file/d/1aXwuas3yNbge5hBYlKARo-02s4dp7PLo/preview",
+        title: "10/04/2022 Resume",
+        // link: "https://drive.google.com/file/d/1aXwuas3yNbge5hBYlKARo-02s4dp7PLo/preview",
+        link: "https://drive.google.com/file/d/1EyOigp2zjtDyTpvjluSu7xwsqsAeIlh2/preview",
         text: [],
       },
     ],

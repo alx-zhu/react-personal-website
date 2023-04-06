@@ -22,7 +22,7 @@ export const projectsList = [
       src: "images/icons/folder.png",
       alt: "Folder Icon",
     },
-    title: "Studyind File Processor",
+    title: "Studyfind File Processor",
     date: "08/01/2022",
     languages: "Python, Python OS, Pandas, Google Drive API",
     github: "https://github.com/alx-zhu-studyfind/file-processor",
